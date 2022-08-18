@@ -1,1 +1,56 @@
 @use 'variables' as *;
+
+.white-wave {
+    max-width: 100%;
+    height: auto;
+}
+
+.center {
+    text-align: $center;
+    padding: 1rem 3rem 3rem 3rem;
+
+    h2 {
+        color: $dark-header-mobile;
+        margin: 0;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+article {
+    border-top: 1px solid $border-lines;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    justify-content: center;
+}
+
+.products {
+    text-decoration: none;
+    color: $dark-header-mobile;
+    &:visited {
+        color: $dark-header-mobile;
+    }
+    &:focus {
+        color: $hover-text
+    }
+    &:active {
+        color: $hover-text;
+    }
+    &:hover {
+        color: $hover-text;
+    }
+}
+
+.product-image {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.image-modify {
+    width: 50%;
+}
