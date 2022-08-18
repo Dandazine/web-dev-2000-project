@@ -1,1 +1,17 @@
 @use 'variables' as *;
+
+footer {
+    background-color: $hover-text;
+
+    div h3 {
+        margin: 0;
+    }
+}
+
+.logo {
+    width: 100px;
+}
+
+.icon {
+    width: 25px;
+}
