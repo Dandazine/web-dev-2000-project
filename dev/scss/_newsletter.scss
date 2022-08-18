@@ -1,1 +1,47 @@
 @use 'variables' as *;
+
+body{
+    margin: 0;
+}
+.newsletter{
+    background-color: $newsletter-header-bg;
+    width: 100%;
+    padding: 1.4rem 0 1.6rem;
+    form{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    label{
+        color: $newsletter-header;
+        font-size: 20px;
+        font-family: $header-font;
+        line-height: 1.5rem;
+        display:block;
+        text-align: center;
+    }
+    div{
+        font-size: .75rem;
+        line-height: 1rem;
+        height: 2rem;
+        display:flex;
+        justify-content: center;
+        gap: 5px;
+    }
+    button{
+        font-weight: 700;
+        width: 6rem;
+        padding: .3rem;
+        text-align:center;
+    }
+    .email-input{
+        box-shadow: none;
+        border: none;   
+        padding: .5rem 1.19rem 0.5rem;
+        width:100%;
+        margin: 0;
+        display:block;
+    }
+}

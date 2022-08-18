@@ -1,5 +1,10 @@
 @use 'variables' as *;
 
+<<<<<<< HEAD
+li{
+    
+    a{
+=======
 a {
     color: $light-text;
     li & {
@@ -12,10 +17,28 @@ a {
         color: $hover-text;
     }
     &:visited {
+>>>>>>> e8b8e02f8c89f7f57e0d69c4220d0bbb5a49b6d2
         color: $light-text;
         text-decoration: none;
+        &:hover {
+        color: $hover-text;
+        }
+        &:focus {
+            color: $hover-text;
+        }
+        &:active {
+            color: $hover-text;
+        }
+        &:visited {
+            color: $light-text;
+            text-decoration: none;
+        }
     }
+<<<<<<< HEAD
+    
+=======
     &:hover {
         color: $hover-text;
     }
+>>>>>>> e8b8e02f8c89f7f57e0d69c4220d0bbb5a49b6d2
 }
