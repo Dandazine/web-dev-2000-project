@@ -5,9 +5,6 @@ a {
     li & {
         text-decoration: none;
     }
-    &:hover {
-        color: $hover-text;
-    }
     &:focus {
         color: $hover-text;
     }
@@ -17,5 +14,8 @@ a {
     &:visited {
         color: $light-text;
         text-decoration: none;
+    }
+    &:hover {
+        color: $hover-text;
     }
 }
