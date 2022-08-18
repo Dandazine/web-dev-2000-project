@@ -14,6 +14,7 @@
 	<!-- end Google Fonts -->
 
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+	<link rel="stylesheet" href="./styles/normalize-fwd.css">
 	<link rel="stylesheet" href="./styles/styles.css?cachebuster=1">
 </head>
 <body>
@@ -147,11 +148,13 @@ git add
 		</section>
 
 		<!-- Newsletter Section  -->
-		<section>
+		<section class="newsletter">
 			<form action="#">
 				<label for="newsletter">Stay in the know. Sign up for our newsletter.</label>
-				<input type="email" placeholder="Enter your email" name="newsletter">
-				<input type="submit">
+				<div>
+					<input type="email" placeholder="Enter your email" name="newsletter" class="email-input">
+					<input type="submit">
+				</div>
 			</form>
 		</section>
 
