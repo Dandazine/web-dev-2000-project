@@ -49,6 +49,10 @@
             width: 10px;
             border-radius: 50%;
             display: block;
+
+            &:hover {
+                background-color: $light-text;
+            }
         }
     }
 }
