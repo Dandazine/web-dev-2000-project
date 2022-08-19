@@ -1,8 +1,24 @@
 @use 'variables' as *;
 
-.white-wave {
-    max-width: 100%;
-    height: auto;
+// .white-wave {
+//     max-width: 100%;
+//     // height: auto;
+// }
+.testing-curves{
+    position: relative;
+}
+
+.testing-curves::before{
+    background-image: url("../images/wave-blue-dark.png");
+    background-size: 160% 80%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -60px;
+    top: -62px;
+    right: 0;
+    z-index: 10;
+    height: 166px;
+    content: "";
 }
 
 .center {
@@ -17,6 +33,7 @@
     p {
         font-size: 0.9rem;
     }
+
 }
 
 article {
