@@ -1,5 +1,9 @@
 @use 'variables' as *;
 
+.reilly{
+    padding-bottom: 7rem;
+}
+
 footer {
     background-color: $hover-text;
     align-items: center;
@@ -7,6 +11,24 @@ footer {
     div h3 {
         margin: 0;
     }
+}
+
+.blue-curves{
+    position:relative;
+}
+
+.blue-curves::before{
+    background-image: url('../images/wave-blue-light.png');
+    background-repeat: no-repeat;
+    background-size: 160% 80%;
+    position: absolute;
+    left: -3.75rem;
+    top: -5rem;
+    right: 0;
+    z-index: 3;
+    height: 10rem;
+    max-height: 6.3rem;
+    content: "";
 }
 
 .logo {

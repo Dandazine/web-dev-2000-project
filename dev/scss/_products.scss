@@ -1,23 +1,20 @@
 @use 'variables' as *;
 
-// .white-wave {
-//     max-width: 100%;
-//     // height: auto;
-// }
-.testing-curves{
-    position: relative;
+.white-curves{
+    position:relative;
 }
 
-.testing-curves::before{
-    background-image: url("../images/wave-blue-dark.png");
-    background-size: 160% 80%;
+.white-curves::before{
+    background-image: url('../images/wave-white.png');
     background-repeat: no-repeat;
+    background-size: 160% 80%;
     position: absolute;
-    left: -60px;
-    top: -62px;
+    left: -3.75rem;
+    top: -5rem;
     right: 0;
-    z-index: 10;
-    height: 166px;
+    z-index: 3;
+    height: 10rem;
+    max-height: 6.3rem;
     content: "";
 }
 
