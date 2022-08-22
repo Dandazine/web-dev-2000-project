@@ -46,6 +46,10 @@ article {
 .products {
     text-decoration: none;
     color: $dark-header-mobile;
+    a{
+        display:flex;
+        flex-wrap: wrap;
+    }
     &:visited {
         color: $dark-header-mobile;
     }

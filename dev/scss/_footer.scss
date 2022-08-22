@@ -20,12 +20,12 @@ footer {
 .blue-curves::before{
     background-image: url('../images/wave-blue-light.png');
     background-repeat: no-repeat;
-    background-size: 160% 80%;
+    background-size: 140% 110%;
     position: absolute;
-    left: -3.75rem;
-    top: -5rem;
+    left: -6.8rem;
+    top: -4rem;
     right: 0;
-    z-index: 3;
+    z-index: -1;
     height: 10rem;
     max-height: 6.3rem;
     content: "";
