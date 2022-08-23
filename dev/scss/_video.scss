@@ -1,0 +1,9 @@
+@use 'variables' as *;
+
+.embed-container {
+    position: relative;
+    padding-bottom: 59.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
