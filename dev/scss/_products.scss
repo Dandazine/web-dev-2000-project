@@ -72,3 +72,28 @@ article {
 .image-modify {
     width: 50%;
 }
+
+
+@media (min-width: 48rem){
+    .white-curves::before{
+        background-size:100% 150%;
+        top: -4rem;
+        max-height: 4.3rem;
+    }
+
+    .white-curves::after{
+        background-image: url('../images/wave-white.png');
+        background-repeat: no-repeat;
+        background-size: 100% 150%;
+        position: absolute;
+        left: -3.75rem;
+        bottom: -7rem;
+        right: 0;
+        z-index: 3;
+        height: 10rem;
+        max-height: 6.3rem;
+        content: "";
+        transform: rotate(180deg);
+    }
+
+}
