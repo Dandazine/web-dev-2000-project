@@ -20,68 +20,59 @@
 <body>
 <!-- Put your HTML code here... -->
 
-<!-- Lets treat this as a to do list (add whenever you need something done, and delete when it's done)
-		// CHANGE THE TEXT COLOURS FOR:
-			// make the navigation links $light-text
-			// make the hero section header and <a> tags $light-text with $hover-text for :hover, :active, :focus
-			// make the product section (except for the <p> tags) $dark-header-mobile with $hover-text for :hover, :active, :focus
-			// make the about section $light-text with $hover-text for :hover, :active, :focus
-			// make newsletter header $newsletter-header and possibly the placeholder text colour as $placeholder-text
-			// make the map section $dark-header-map
-			// make the contact section $light-text with $hover-text for :hover, :active, :focus
-			// make footer $light-text with $hover-text for :hover, :active, :focus
-
-git add
--->
-
 
 	<header>
-		<!-- Desktop only ?!?!?!??!!?!?!?/  -->
-		<div>
-			<div>
-				<a href="">Install Map</a>
-				<a href="">Product Literature</a>
+		<div class="navigation-bar">
+			<!-- Logo Placement -->
+			<div class="logo-container">
+				<a href="index.html" class="logo">
+					<img src="./images/logo-white-vulcan.svg" alt="Vulcan Logo" class="vulcan-image">
+				</a>
 			</div>
-			<div>
-				<a href="">+1 712-642-2755</a>
-				<a href="">Contact Us</a>
+	
+			<div class="menu-container container">
+				<!-- Hamburger Menu using Spans -->
+				<input type="checkbox" class="checkbox" id="" name="">
+				<div class="hamburger-icon">
+					<span class="line line1"></span>
+					<span class="line line2"></span>
+					<span class="line line3"></span>
+				</div>
+				<nav class="menu">
+					<ul>
+						<li class="about">
+							<a href="">About</a>
+							<!-- Sub-Menu About -->
+							<ul class="submenu">
+								<li><a href="">Our Commitment</a></li>
+								<li><a href="">Our Team</a></li>
+								<li><a href="">Career</a></li>
+							</ul>
+						</li>
+						<li><a href="">Products</a></li>
+						<li class="services">
+							<a href="">Services</a>
+							<!-- Sub-Menu Services -->
+							<ul class="submenu">
+								<li><a href="">Engineering</a></li>
+								<li><a href="">Manufacturing</a></li>
+							</ul>
+						</li>
+						<li><a href="">Parts</a></li>
+						<li><a href="">News</a></li>
+						<li class="contact">
+							<a href="">Contact</a>
+							<!-- Sub-Menu Contact -->
+							<ul class="submenu">
+								<li><a href="">Find Sales Rep</a></li>
+							</ul>
+						</li>
+						<li><a href="" class="hidden-link">Installation Map</a></li>
+						<li><a href="" class="hidden-link">Product Literature</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
-
-		<a href="" class="logo">
-			<img src="" alt="">
-		</a>
-		<button class="nav-menu-btn">
-			
-		</button>
-		<nav>
-			<ul>
-				<li><a href="">About</a></li>
-				<div class="hover-hidden-1" style="display : none">
-					<li><a href="">Our commitment</a></li>
-					<li><a href="">Our Team</a></li>
-					<li><a href="">Careers</a></li>
-				</div>
-				<li><a href="">Products</a></li>
-				<li><a href="">Services</a></li>
-				<div class="hover-hidden-2" style="display : none">
-					<li><a href="">Engineering</a></li>
-					<li><a href="">Manufacturing</a></li>
-				</div>
-				<li><a href="">Parts</a></li>
-				<li><a href="">News</a></li>
-				<li><a href="">Contact</a></li>
-				<div class="hover-hidden-3" style="display : none">
-					<li><a href="">Find sales rep</a></li>
-				</div>
-				
-				<!-- Mobile only navigation  -->
-				<div>
-					<li><a href="">Installation Map</a></li>
-					<li><a href="">Product Literature</a></li>
-				</div>
-			</ul>
-		</nav>
 	</header>
 
 	<main>
