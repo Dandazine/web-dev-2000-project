@@ -1,17 +1,11 @@
 @use 'variables' as *;
 
-body{
-    margin: 0;
-}
 .newsletter{
     background-color: $newsletter-header-bg;
     width: 100%;
     padding: 1.4rem 0 1.6rem;
     form{
-        // display:flex;
-        // flex-wrap: wrap;
-        // align-items: center;
-        gap: 1rem;
+        gap: .4rem;
     }
     label{
         color: $newsletter-header;
@@ -33,9 +27,18 @@ body{
     }
     button{
         font-weight: 700;
-        width: 6rem;
-        padding: .3rem;
+        width:8.5rem;
+        max-width: 8.5rem;
+        padding: 6px 0.3rem;
+        margin-left: 2px;
         text-align:center;
+        background-color: $btn-color;
+        color: white;
+        outline: none;
+        border:none;
+        font-family: $body-font;
+        text-transform: uppercase;
+        font-size: 1rem;
     }
     .email-input{
         box-shadow: none;
@@ -44,5 +47,57 @@ body{
         width:100%;
         margin: 0;
         display:block;
+    }
+}
+
+@media (min-width : 48rem){
+    .newsletter{
+        
+        form{
+            max-width: 45rem;
+            margin: 0 auto;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .email-input{
+            font-size:1rem;
+            padding-left: .8rem;
+        }
+        label{
+            margin: 0;
+        }
+        div{
+            width: 22.8rem;
+            margin: 0;
+        }
+    }
+   
+
+}
+
+@media (min-width: 64rem){
+        .newsletter{
+            form{
+                max-width: 60rem;
+            }
+            div{
+                width: 26.8rem;
+            }
+            label{
+                font-size: 1.7rem;
+            }
+        }
+}
+
+@media (min-width: 82rem){
+    .newsletter{
+        form{
+            max-width: 75rem;
+        }
+        div{
+            width: 40rem;
+        }
     }
 }

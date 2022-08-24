@@ -94,3 +94,12 @@ svg {
     justify-content: center;
     padding-bottom: 1rem;
 }
+
+
+@media (min-width: 48rem){
+    .blue-curves::before{
+        background-size: 100%;
+        left:0;
+        top: -3rem;
+    }
+}
