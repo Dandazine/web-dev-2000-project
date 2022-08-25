@@ -20,68 +20,59 @@
 <body>
 <!-- Put your HTML code here... -->
 
-<!-- Lets treat this as a to do list (add whenever you need something done, and delete when it's done)
-		// CHANGE THE TEXT COLOURS FOR:
-			// make the navigation links $light-text
-			// make the hero section header and <a> tags $light-text with $hover-text for :hover, :active, :focus
-			// make the product section (except for the <p> tags) $dark-header-mobile with $hover-text for :hover, :active, :focus
-			// make the about section $light-text with $hover-text for :hover, :active, :focus
-			// make newsletter header $newsletter-header and possibly the placeholder text colour as $placeholder-text
-			// make the map section $dark-header-map
-			// make the contact section $light-text with $hover-text for :hover, :active, :focus
-			// make footer $light-text with $hover-text for :hover, :active, :focus
-
-git add
--->
-
 
 	<header>
-		<!-- Desktop only ?!?!?!??!!?!?!?/  -->
-		<div>
-			<div>
-				<a href="">Install Map</a>
-				<a href="">Product Literature</a>
+		<div class="navigation-bar">
+			<!-- Logo Placement -->
+			<div class="logo-container">
+				<a href="index.html" class="logo">
+					<img src="./images/logo-white-vulcan.svg" alt="Vulcan Logo" class="vulcan-image">
+				</a>
 			</div>
-			<div>
-				<a href="">+1 712-642-2755</a>
-				<a href="">Contact Us</a>
+	
+			<div class="menu-container container">
+				<!-- Hamburger Menu using Spans -->
+				<input type="checkbox" class="checkbox" id="" name="">
+				<div class="hamburger-icon">
+					<span class="line line1"></span>
+					<span class="line line2"></span>
+					<span class="line line3"></span>
+				</div>
+				<nav class="menu">
+					<ul>
+						<li class="about">
+							<a href="">About</a>
+							<!-- Sub-Menu About -->
+							<ul class="submenu">
+								<li><a href="">Our Commitment</a></li>
+								<li><a href="">Our Team</a></li>
+								<li><a href="">Career</a></li>
+							</ul>
+						</li>
+						<li><a href="">Products</a></li>
+						<li class="services">
+							<a href="">Services</a>
+							<!-- Sub-Menu Services -->
+							<ul class="submenu">
+								<li><a href="">Engineering</a></li>
+								<li><a href="">Manufacturing</a></li>
+							</ul>
+						</li>
+						<li><a href="">Parts</a></li>
+						<li><a href="">News</a></li>
+						<li class="contact">
+							<a href="">Contact</a>
+							<!-- Sub-Menu Contact -->
+							<ul class="submenu">
+								<li><a href="">Find Sales Rep</a></li>
+							</ul>
+						</li>
+						<li><a href="" class="hidden-link">Installation Map</a></li>
+						<li><a href="" class="hidden-link">Product Literature</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
-
-		<a href="" class="logo">
-			<img src="" alt="">
-		</a>
-		<button class="nav-menu-btn">
-			
-		</button>
-		<nav>
-			<ul>
-				<li><a href="">About</a></li>
-				<div class="hover-hidden-1" style="display : none">
-					<li><a href="">Our commitment</a></li>
-					<li><a href="">Our Team</a></li>
-					<li><a href="">Careers</a></li>
-				</div>
-				<li><a href="">Products</a></li>
-				<li><a href="">Services</a></li>
-				<div class="hover-hidden-2" style="display : none">
-					<li><a href="">Engineering</a></li>
-					<li><a href="">Manufacturing</a></li>
-				</div>
-				<li><a href="">Parts</a></li>
-				<li><a href="">News</a></li>
-				<li><a href="">Contact</a></li>
-				<div class="hover-hidden-3" style="display : none">
-					<li><a href="">Find sales rep</a></li>
-				</div>
-				
-				<!-- Mobile only navigation  -->
-				<div>
-					<li><a href="">Installation Map</a></li>
-					<li><a href="">Product Literature</a></li>
-				</div>
-			</ul>
-		</nav>
 	</header>
 
 	<main>
@@ -122,7 +113,7 @@ git add
 				<h2>Customized Per Order</h2>
 				<p>Just as no two treatment plants are the same, no two of our screening, grit handling or sludge thickening products are either. We'll help determine exactly what you need.</p>
 			</div>
-			<div class="products">
+			<div class="all-products">
 
 				<!-- Screening  -->
 				<article>
@@ -138,7 +129,7 @@ git add
 						</a>
 					</div>
 
-					<h3>
+					<h3 class="center-h3">
 						<a href="#" class="products">Screening</a>
 					</h3>
 				</article>
@@ -157,7 +148,7 @@ git add
 						</a>
 					</div>
 
-					<h3>
+					<h3 class="center-h3">
 						<a href="#" class="products">Screenings Handling</a>
 					</h3>
 				</article>
@@ -176,7 +167,7 @@ git add
 						</a>
 					</div>
 
-					<h3>
+					<h3 class="center-h3">
 						<a href="#" class="products">Grit Handling</a>
 					</h3>
 				</article>
@@ -227,42 +218,48 @@ git add
 
 	<footer class="blue-curves">
 		<div class="container">
-			<img src="./images/wave-blue-light.png" alt="Light Blue Wave Divider" class="footer-image">
-			<div class="logo">
-				<a href="#">
-					<img src="./images/logo-white-vulcan.svg" alt="Vulcan Logo">
-				</a>
-			</div>
-
-			<!-- Facebook and LinkedIn icons (Why does this business have a linkedin) -->
-			<div class="phone-and-icons">
-				<div class="social-media">
-					<a href="facebook.com" class="line">
-						<img src="./images/icon-white-facebook.png" alt="Facebook" class="icon">
-					</a>
-
-					<a href="linkedin.com">
-						<img src="./images/icon-white-linkedin.png" alt="LinkedIn" class="icon">
+			<div class="together">
+				<div class="logo">
+					<a href="#">
+						<img src="./images/logo-white-vulcan.svg" alt="Vulcan Logo">
 					</a>
 				</div>
 
-				<div class="phone">
-					<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/></svg>
-					<a href="#" class="footer-text">
-						+1 712-642-2755
-					</a>
+				<div class="icons-copyright">
+					<div class="all-icons">
+						<!-- Facebook and LinkedIn icons (Why does this business have a linkedin) -->
+						<div class="phone-and-icons">
+							<div class="social-media">
+								<a href="facebook.com" class="line-footer">
+									<img src="./images/icon-white-facebook.png" alt="Facebook" class="icon">
+								</a>
+	
+								<a href="linkedin.com">
+									<img src="./images/icon-white-linkedin.png" alt="LinkedIn" class="icon">
+								</a>
+							</div>
+	
+							<div class="phone">
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/></svg>
+								<a href="#" class="footer-text">
+									+1 712-642-2755
+								</a>
+							</div>
+						</div>
+	
+						<div class="mail">
+							<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
+							<a href="#" class="footer-text">
+								Contact Us
+							</a>
+						</div>
+					</div>
+				
+	
+					<div class="copyright">
+						<h3 class="footer-text">Copyright 2022. All rights reserved</h3>
+					</div>
 				</div>
-			</div>
-
-			<div class="mail">
-				<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
-				<a href="#" class="footer-text">
-					Contact Us
-				</a>
-			</div>
-
-			<div class="copyright">
-				<h3 class="footer-text">Copyright 2022. All rights reserved.</h3>
 			</div>
 		</div>
 	</footer>

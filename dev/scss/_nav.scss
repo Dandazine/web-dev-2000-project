@@ -1,10 +1,12 @@
 @use 'variables' as *;
 
-
+/* General Styling for <li> and <a> tags */
 a {
     color: $light-text;
     li & {
         text-decoration: none;
+        padding: 5px 15px;
+        display: block;
     }
     &:focus {
         color: $hover-text;
@@ -17,6 +19,172 @@ a {
         text-decoration: none;
     }
     &:hover {
-        color: $hover-text;
+        color: $light-text;
     }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+/* Possible Image Sizing for the logo */
+.vulcan-image {
+    width: 100px;
+    height: 40px;
+}
+
+.logo {
+    max-height: 2rem;
+    margin: 1.2rem 0;
+}
+
+.logo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 15px;
+}
+
+/* Navigation Bar Styling */
+.navigation-bar {
+    width: 100%;
+    background-color: $navigation-banner;
+    position: relative;
+    height: 70px;
+}
+
+/* Container for the menu items */
+.menu-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    top: 25px;
+}
+
+
+/* Styling for the checkbox to allow css transitions */
+.checkbox {
+    position: absolute;
+    display: block;
+    height: 34px;
+    width: 36px;
+    opacity: 0%;
+    cursor: pointer;
+    right: 15px;
+    top: -5px;
+    -webkit-tap-highlight-color: transparent
+}
+
+.hamburger-icon {
+    height: 20px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Styling for the Hamburger lines */
+.line {
+    display: block;
+    height: 3px;
+    width: 34px;
+    background-color: white;
+}
+
+.line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+    position: absolute;
+}
+
+.line2 {
+    transition: transform 0.2s ease-in-out;
+    position: absolute;
+    top: 9px;
+}
+
+.line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+    position: absolute;
+    top: 18px;
+}
+
+/* Styling for the menu itself */
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    transform: translate(0%, -150%);
+    transition: transform 0.5s ease-in-out;
+    background-color: $navigation-banner;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    overflow: hidden;
+}
+
+/* Styling for the submenu */
+.submenu {
+    display: none;
+    padding: 0.5rem;
+}
+
+/* Styling for the about section */
+.about:hover {
+    background-color: rgba(0, 157, 220, .72);
+
+    .submenu {
+        display: block;
+        background-color: rgba(0, 157, 220, .72);
+        width: 100%;
+    }
+}
+
+/* Styling for the services section */
+.services:hover {
+    background-color: rgba(0, 157, 220, .72);
+
+    .submenu {
+        display: block;
+        background-color: rgba(0, 157, 220, .72);
+    }
+}
+
+/* Styling for the contact section */
+.contact:hover {
+    background-color: rgba(0, 157, 220, .72);
+
+    .submenu {
+        display: block;
+        background-color: rgba(0, 157, 220, .72);
+    }
+}
+
+/* Styling for the css transitions when the checkbox is clicked */
+input[type="checkbox"]:checked ~ .menu {
+    transform: translateX(0);
+}
+
+input[type="checkbox"]:checked ~ .hamburger-icon .line1 {
+    transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked ~ .hamburger-icon .line2 {
+    transform: scaleY(0);
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ .hamburger-icon .line3 {
+    transform: rotate(-45deg);
+    top: 23px;
+}
+
+input[type="checkbox"]:checked ~ .logo{
+    display: none;
 }
