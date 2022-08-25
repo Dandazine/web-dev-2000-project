@@ -1,6 +1,6 @@
 @use 'variables' as *;
 
-.reilly{
+.reilly {
     padding-bottom: 7rem;
 }
 
@@ -68,7 +68,7 @@ svg {
     align-items: center;
 }
 
-.line {
+.line-footer {
     text-decoration: none;
     padding-right: 0.5rem;
 }
@@ -92,7 +92,10 @@ svg {
 .copyright {
     display: flex;
     justify-content: center;
-    padding-bottom: 1rem;
+}
+
+.icons-copyright {
+    padding-bottom: 2rem;
 }
 
 
@@ -101,5 +104,53 @@ svg {
         background-size: 100%;
         left:0;
         top: -3rem;
+        max-height:auto;
+        height: 5rem;
+    }
+}
+
+@media (min-width: 72rem){
+    .blue-curves::before{
+        background-size: 100% 90%;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .phone-and-icons {
+        padding: 0;
+        padding-right: 0.8rem;
+    }
+
+    .all-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .together {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        padding-right: 4rem;
+    }
+
+    .icons-copyright {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 64rem) {
+    .footer-text {
+        font-size: 1rem;
+    }
+
+    .icons-copyright {
+        flex-direction: row;
+        align-items: center;
+        // padding-bottom: 2rem;
     }
 }
