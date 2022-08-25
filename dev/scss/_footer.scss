@@ -101,5 +101,13 @@ svg {
         background-size: 100%;
         left:0;
         top: -3rem;
+        max-height:auto;
+        height: 5rem;
+    }
+}
+
+@media (min-width: 72rem){
+    .blue-curves::before{
+        background-size: 100% 90%;
     }
 }
