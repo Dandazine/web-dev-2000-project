@@ -1,1 +1,95 @@
 @use 'variables' as *;
+  .flex-container {
+    padding: 0;
+  
+  section, aside, div {
+    padding: 31px;
+  }
+  
+  .map {
+    background-size: cover;
+    resize: both;
+    background-repeat: no-repeat;
+	background-image: url(../images/map.jpg);
+	background-position: 45%;
+    height: 450px;
+    width: 100%;
+    text-align: center;
+    z-index: -100;
+}
+   .map h2{
+    margin-top: 125px;
+    color:  $dark-header-map;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 0;
+   }
+
+   .map .button{
+    border: 2px solid $dark-header-map;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: $dark-header-map;
+    font-weight: 600;
+    font-size: 16px;
+   }
+
+  .find {
+	  display: flex;
+	  justify-content: center;
+  }
+
+  .project {
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-color: $newsletter-header;
+  	background-position: 50%;
+    height: 450px;
+    width: 100%;
+    text-align: center;
+    z-index: -100;
+  }
+
+  .project h2{
+    margin-top: 125px;
+    color:  $light-text;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 0;
+    max-width: fit-content;
+    margin: auto;
+   }
+   .project .button{
+    border: 2px solid $light-text;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: $light-text;
+    font-weight: 600;
+    font-size: 16px;
+   }
+}
+
+  @media (min-width: 768px){
+    .flex-container{ 
+      display: flex;
+
+      .button {
+        background-color: $hover-text;
+        color: $light-text;
+    }
+   
+    .main-content {
+        flex: 1; 
+        order: 1;
+        font-size: 60px;
+    }
+
+    .sidebar {
+        flex: 1;
+        justify-content: center;
+    }
+    }
+}
+
+

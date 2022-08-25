@@ -1,9 +1,41 @@
 @use 'variables' as *;
 
-.embed-container {
-    position: relative;
-    padding-bottom: 59.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
+
+.video {
+    background-color: #009ddc;
+    padding: 55px 70px;
+    padding-top: 60px;
 }
+
+.video-wrapper {
+    position:relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    border: solid #154B66 15px;
+}
+
+.video-wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media (min-width: 48rem){
+.video {
+    background-color: #009ddc;
+    padding: 0 80px 60px;
+    padding-top: 60px;
+}
+}
+
+@media (min-width: 81.25rem){
+    .video {
+        background-color: #009ddc;
+        padding: 0 325px 60px;
+        padding-top: 60px;
+    }
+    }
