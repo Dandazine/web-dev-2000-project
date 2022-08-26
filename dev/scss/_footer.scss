@@ -110,6 +110,18 @@ svg {
     }
 }
 
+@media (min-width: 64rem) {
+    .footer-text {
+        font-size: 1rem;
+    }
+
+    .icons-copyright {
+        flex-direction: row;
+        align-items: center;
+        // padding-bottom: 2rem;
+    }
+}
+
 @media (min-width: 72rem){
     .blue-curves::before{
         background-size: 100% 90%;
@@ -141,17 +153,5 @@ svg {
     .icons-copyright {
         display: flex;
         flex-direction: column;
-    }
-}
-
-@media (min-width: 64rem) {
-    .footer-text {
-        font-size: 1rem;
-    }
-
-    .icons-copyright {
-        flex-direction: row;
-        align-items: center;
-        // padding-bottom: 2rem;
     }
 }
