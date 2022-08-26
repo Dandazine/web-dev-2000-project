@@ -29,162 +29,311 @@ ul {
     width: 100%;
 }
 
-/* Possible Image Sizing for the logo */
+li {
+    list-style: none;
+}
+
+/* Styling for the <nav> header */
+.header {
+    background-color: rgb(70, 68, 68, 0.8);
+    width: 100%;
+    z-index: 3;
+
+    .logo {
+        display: block;
+        float: left;
+        padding: 10px 10px 0 10px;
+    }
+
+    /* Styling for the dropdown menu */
+    .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: rgb(70, 68, 68, 0.8);
+        width: 100%;
+
+        li:hover {
+            background-color: $hover-text;
+        }
+    }
+
+    /* Styling the checkbox for the dropdown menu */
+    .menu-icon {
+        float: right;
+        padding: 28px 10px;
+        position: relative;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent
+    }
+
+    .dropdown-button {
+        display: none;
+    }
+}
+
+/* Styling for hovers */
+.installation-map:hover {
+    color: $hover-text;
+}
+
+.product-literature:hover {
+    color: $hover-text;
+}
+
+.dropdown-button:hover {
+    background-color: $hover-text;
+}
+
+/* Styling the Vulcan Logo */
 .vulcan-image {
     width: 100px;
     height: 40px;
 }
 
-.logo {
-    max-height: 2rem;
-    margin: 1.2rem 0;
-}
-
-.logo-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 15px;
-}
-
-/* Navigation Bar Styling */
-.navigation-bar {
-    width: 100%;
-    background-color: $navigation-banner;
-    position: relative;
-    height: 70px;
-}
-
-/* Container for the menu items */
-.menu-container {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    display: flex;
-    flex-direction: row-reverse;
-    position: relative;
-    top: 25px;
-}
-
-
-/* Styling for the checkbox to allow css transitions */
-.checkbox {
-    position: absolute;
-    display: block;
-    height: 34px;
-    width: 36px;
-    opacity: 0%;
-    cursor: pointer;
-    right: 15px;
-    top: -5px;
-    -webkit-tap-highlight-color: transparent
-}
-
-.hamburger-icon {
-    height: 20px;
-    width: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-/* Styling for the Hamburger lines */
-.line {
+.menu-icon .hamburger {
+    background: white;
     display: block;
     height: 3px;
-    width: 34px;
-    background-color: white;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 33px;
 }
 
-.line1 {
-    transform-origin: 0% 0%;
-    transition: transform 0.4s ease-in-out;
+.menu-icon .hamburger:before,
+.menu-icon .hamburger:after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
     position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
 }
 
-.line2 {
-    transition: transform 0.2s ease-in-out;
-    position: absolute;
+.menu-icon .hamburger:before {
     top: 9px;
 }
 
-.line3 {
-    transform-origin: 0% 100%;
-    transition: transform 0.4s ease-in-out;
-    position: absolute;
-    top: 18px;
+.menu-icon .hamburger:after {
+    top: -9px;
 }
 
-/* Styling for the menu itself */
-.menu {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    transform: translate(0%, -150%);
-    transition: transform 0.5s ease-in-out;
-    background-color: $navigation-banner;
-    position: absolute;
-    top: 45px;
-    right: 0;
-    overflow: hidden;
+/* Styling the hamburger menu itself */
+.header .dropdown-button:checked ~ .menu {
+    max-height: 400px;
+}
+
+.header .dropdown-button:checked ~ .menu-icon .hamburger {
+    background: transparent;
+}
+
+.header .dropdown-button:checked ~ .menu-icon .hamburger:before {
+    transform: rotate(-45deg);
+}
+
+.header .dropdown-button:checked ~ .menu-icon .hamburger:after {
+    transform: rotate(45deg);
+}
+
+.header .dropdown-button:checked ~ .menu-icon:not(.steps) .hamburger:before,
+.header .dropdown-button:checked ~ .menu-icon:not(.steps) .hamburger:after {
+    top: 0;
+}
+
+.extra-links {
+    display: none;
 }
 
 /* Styling for the submenu */
 .submenu {
     display: none;
     padding: 0.5rem;
+
+    li {
+        list-style: none;
+    }
 }
 
 /* Styling for the about section */
 .about:hover {
-    background-color: rgba(0, 157, 220, .72);
+    background-color: $hover-text;
 
     .submenu {
         display: block;
-        background-color: rgba(0, 157, 220, .72);
+        background-color: $hover-text;
         width: 100%;
     }
 }
 
 /* Styling for the services section */
 .services:hover {
-    background-color: rgba(0, 157, 220, .72);
+    background-color: $hover-text;
 
     .submenu {
         display: block;
-        background-color: rgba(0, 157, 220, .72);
+        background-color: $hover-text;
     }
 }
 
 /* Styling for the contact section */
 .contact:hover {
-    background-color: rgba(0, 157, 220, .72);
+    background-color: $hover-text;
 
     .submenu {
         display: block;
-        background-color: rgba(0, 157, 220, .72);
+        background-color: $hover-text;
     }
 }
 
-/* Styling for the css transitions when the checkbox is clicked */
-input[type="checkbox"]:checked ~ .menu {
-    transform: translateX(0);
+/* Styling for icons */
+.phone {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem;
+
+    svg:hover {
+        fill: $hover-text;
+    }
 }
 
-input[type="checkbox"]:checked ~ .hamburger-icon .line1 {
-    transform: rotate(45deg);
+.mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+
+    svg:hover {
+        fill: $hover-text;
+    }
 }
 
-input[type="checkbox"]:checked ~ .hamburger-icon .line2 {
-    transform: scaleY(0);
-    opacity: 0;
+.footer-text {
+    font-size: 0;
+    text-decoration: none;
+    color: $light-text;
+    font-weight: lighter;
+    padding-left: 7px;
+
+    &:hover {
+        color: $hover-text;
+    }
 }
 
-input[type="checkbox"]:checked ~ .hamburger-icon .line3 {
-    transform: rotate(-45deg);
-    top: 23px;
-}
-
-input[type="checkbox"]:checked ~ .logo{
+.phone-and-mail {
     display: none;
+}
+
+@media(min-width: 48rem) {
+    .footer-text {
+        font-size: 1rem;
+    }
+
+    .vulcan-image {
+        width: 200px;
+        height: 60px;
+    }
+
+    .icon {
+        width: 25px;
+    }
+
+    svg {
+        fill: white;
+    }
+
+    .phone-and-mail {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    .navigation-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hidden-link {
+        display: none;
+    }
+
+    .links-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 3rem;
+    }
+
+    .extra-links {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+        font-size: 0.85rem;
+    }
+
+    .header {
+        background-color: transparent;
+
+        .logo {
+            float: none;
+            display: flex;
+            justify-content: center;
+            width: 20%;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0;
+        }
+
+        .menu-icon {
+            display: none;
+        }
+
+        .menu {
+            max-height: none;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 1.5rem;
+            max-width: 600px;
+            margin-top: 1.5rem;
+        }
+    }
+
+    .menu {
+        margin-top: 1.5rem;
+    }
+
+    .about:hover .submenu {
+        position: absolute;
+        width: initial;
+    }
+
+    .services:hover .submenu {
+        position: absolute;
+        width: initial;
+    }
+
+    .contact:hover .submenu {
+        position: absolute;
+        width: initial;
+    }
+}
+
+@media(min-width: 64rem) {
+    .vulcan-image {
+        width: 300px;
+        height: 80px;
+    }
+
+    .header .menu {
+        font-size: 0.9rem;
+        max-width: 800px;
+        padding: 1.2rem 1.5rem;
+    }
 }
