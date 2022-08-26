@@ -73,6 +73,10 @@ article {
     width: 50%;
 }
 
+.sludge-bottom {
+    padding-bottom: 5rem;
+}
+
 
 @media (min-width: 48rem){
     .white-curves::before{
@@ -120,10 +124,15 @@ article {
     .all-products {
         display: flex;
         flex-direction: row;
+        padding-bottom: 5rem;
     }
     
     .center-h3 {
         max-width: 90px;
         text-align: center;
+    }
+
+    .sludge-bottom {
+        padding: 0;
     }
 }
