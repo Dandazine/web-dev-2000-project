@@ -1,10 +1,11 @@
 @use 'variables' as *;
-  .flex-container {
-    padding: 0;
-  
-  section, aside, div {
-    padding: 31px;
-  }
+
+.flex-container {
+  padding: 0;
+
+section, aside, div {
+  padding: 31px;
+}
   
   .map {
     background-size: cover;
@@ -32,6 +33,10 @@
     color: $dark-header-map;
     font-weight: 600;
     font-size: 16px;
+
+    &:hover {
+      background-color: $dark-submit-active;
+    }
    }
 
   .find {
@@ -43,7 +48,7 @@
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
-	background-color: $newsletter-header;
+	  background-color: $newsletter-header;
   	background-position: 50%;
     height: 450px;
     width: 100%;
@@ -70,7 +75,11 @@
    }
 }
 
-  @media (min-width: 768px){
+.project a:hover {
+  background-color: $dark-submit-active;
+}
+
+  @media (min-width: 48rem){
     .flex-container{ 
       display: flex;
 

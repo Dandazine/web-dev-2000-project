@@ -77,8 +77,20 @@ article {
     padding-bottom: 5rem;
 }
 
+.screenings {
+    margin-left: 1rem;
+}
 
-@media (min-width: 48rem){
+.sludge {
+    margin-left: 2rem;
+}
+
+.view-selection {
+    display: none;
+}
+
+
+@media (min-width: 48rem) {
     .white-curves::before{
         background-size:100% 150%;
         top: -4rem;
@@ -98,6 +110,8 @@ article {
 
         h2 {
             color: $newsletter-header;
+            font-size: 2rem;
+            padding-bottom: 0.8rem;
         }
     }
 
@@ -134,5 +148,39 @@ article {
 
     .sludge-bottom {
         padding: 0;
+    }
+
+    .screenings {
+        margin-left: 0;
+    }
+    
+    .sludge {
+        margin-left: 0;
+    }
+
+    .view-selection {
+        display: unset;
+        font-size: 0.7rem;
+    }
+
+    article a {
+        color: $view-selection;
+
+        &:hover {
+            color: $view-selection;
+            text-decoration: none;
+        }
+        &:visited {
+            color: $view-selection;
+        }
+        &:focus {
+            color: $view-selection;
+        }
+    }
+}
+
+@media (min-width: 64rem) {
+    .center h2 {
+        font-size: 2.5rem;
     }
 }

@@ -76,6 +76,12 @@ li {
     }
 }
 
+.navigation-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
 /* Styling for hovers */
 .installation-map:hover {
     color: $hover-text;
@@ -195,10 +201,11 @@ li {
     display: flex;
     align-items: center;
     padding: 0.7rem;
+}
 
-    svg:hover {
-        fill: $hover-text;
-    }
+.phone:hover svg, .phone:hover .footer-text {
+    color: $hover-text;
+    fill: $hover-text;
 }
 
 .mail {
@@ -206,10 +213,11 @@ li {
     align-items: center;
     justify-content: center;
     padding: 0.7rem;
+}
 
-    svg:hover {
-        fill: $hover-text;
-    }
+.mail:hover svg, .mail:hover .footer-text {
+    color: $hover-text;
+    fill: $hover-text;
 }
 
 .footer-text {
@@ -218,14 +226,34 @@ li {
     color: $light-text;
     font-weight: lighter;
     padding-left: 7px;
-
-    &:hover {
-        color: $hover-text;
-    }
 }
 
 .phone-and-mail {
     display: none;
+}
+
+/* Styling for the icons in the Footer */
+.phone-footer {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem;
+}
+
+.phone-footer:hover svg, .phone-footer:hover .footer-text {
+    color: $newsletter-header;
+    fill: $newsletter-header;
+}
+
+.mail-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+}
+
+.mail-footer:hover svg, .mail-footer:hover .footer-text {
+    color: $newsletter-header;
+    fill: $newsletter-header;
 }
 
 @media(min-width: 48rem) {
@@ -271,7 +299,6 @@ li {
     .extra-links {
         display: flex;
         flex-direction: row;
-        margin-bottom: 1rem;
         font-size: 0.85rem;
     }
 
@@ -335,5 +362,9 @@ li {
         font-size: 0.9rem;
         max-width: 800px;
         padding: 1.2rem 1.5rem;
+    }
+
+    .extra-links {
+        font-size: 1rem;
     }
 }
