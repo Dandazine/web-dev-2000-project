@@ -9,6 +9,8 @@
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
+    padding-top: 8rem;
 }
 
 .main-header {
@@ -62,5 +64,11 @@
         a:hover {
             background-color: $hover-text;
         }
+    }
+}
+
+@media(min-width: 48rem) {
+    .hero-header {
+        padding-top: 15rem;
     }
 }

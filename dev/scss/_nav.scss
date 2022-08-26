@@ -76,6 +76,12 @@ li {
     }
 }
 
+.navigation-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
 /* Styling for hovers */
 .installation-map:hover {
     color: $hover-text;
@@ -271,7 +277,6 @@ li {
     .extra-links {
         display: flex;
         flex-direction: row;
-        margin-bottom: 1rem;
         font-size: 0.85rem;
     }
 
