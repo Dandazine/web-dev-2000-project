@@ -11,14 +11,14 @@
     resize: both;
     background-repeat: no-repeat;
 	background-image: url(../images/map.jpg);
-	background-position: 45%;
-    height: 450px;
+	background-position: 51%;
+    height: 328px;
     width: 100%;
     text-align: center;
     z-index: -100;
 }
    .map h2{
-    margin-top: 125px;
+    margin-top: 82px;
     color:  $dark-header-map;
     font-weight: 900;
     font-size: 30px;
@@ -26,7 +26,7 @@
    }
 
    .map .button{
-    border: 2px solid $dark-header-map;
+    border: 1px solid $dark-header-map;
     padding: 0.5rem;
     text-decoration: none;
     color: $dark-header-map;
@@ -78,6 +78,25 @@
         background-color: $hover-text;
         color: $light-text;
     }
+
+    .map {
+        height: 420px;
+    }
+   
+    .map h2 {
+        font-size: 30px;
+        margin-top: 133px;
+    }
+
+    .map .button {
+        color: $light-text;
+        border-style: none;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: -5px;
+    }
    
     .main-content {
         flex: 1; 
@@ -89,7 +108,36 @@
         flex: 1;
         justify-content: center;
     }
+
+    .project {
+        display: flex;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $newsletter-header;
+        background-position: 50%;
+        height: 434px;
+        width: 100%;
+        text-align: center;
+        z-index: -100;
+      }
+
+      .project h2 {
+        margin-top: 150px;
+      }
+
+    .project .button {
+        border: 2px solid $hover-text;
     }
+
+    .button {
+        margin-top: 1rem;
+    }
+
+    .find {
+        padding: 8px;
+    }
+
+}
 }
 
 
