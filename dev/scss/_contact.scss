@@ -33,6 +33,10 @@ section, aside, div {
     color: $dark-header-map;
     font-weight: 600;
     font-size: 16px;
+
+    &:hover {
+      background-color: $dark-submit-active;
+    }
    }
 
   .find {
@@ -69,6 +73,10 @@ section, aside, div {
     font-weight: 600;
     font-size: 16px;
    }
+}
+
+.project a:hover {
+  background-color: $dark-submit-active;
 }
 
   @media (min-width: 48rem){

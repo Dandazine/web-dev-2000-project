@@ -95,4 +95,25 @@
     .hero-header {
         padding-top: 15rem;
     }
+
+    .view-products-services {
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+
+        .products-link {
+            margin-right: 1.5rem;
+        }
+
+        a {
+            font-weight: bold;
+        }
+    }
+}
+
+@media(min-width: 64rem) {
+    .view-products-services a:hover {
+        background-color: $light-text;
+        color: $hover-text;
+    }
 }

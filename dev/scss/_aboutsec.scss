@@ -40,6 +40,11 @@
       font-weight: bolder;
     }
 
+    .about-btn:hover {
+      color: $hover-text;
+      background-color: $light-text;
+    }
+
     @media (min-width: 48rem) {
       .about-section h2{
       font-size: 36px;
