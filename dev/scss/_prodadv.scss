@@ -49,6 +49,9 @@
         color: $light-text;
         text-transform: uppercase;
         font-weight: bold;
+        &:hover{
+            background-color: $dark-submit-active;
+        }
     }
 }
 

@@ -1,152 +1,237 @@
 @use 'variables' as *;
 
-.flex-container {
-  padding: 0;
-
-section, aside, div {
-  padding: 31px;
-}
-  
-  .map {
+.flex-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  section{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
-    resize: both;
     background-repeat: no-repeat;
-	background-image: url(../images/map.jpg);
-	background-position: 51%;
+	  background-image: url(../images/map.jpg);
+	  background-position: 51%;
     height: 328px;
-    width: 100%;
-    text-align: center;
-    z-index: -100;
-}
-   .map h2{
-    margin-top: 82px;
-    color:  $dark-header-map;
-    font-weight: 900;
-    font-size: 30px;
-    margin-bottom: 0;
-   }
-
-   .map .button{
-    border: 1px solid $dark-header-map;
-    padding: 0.5rem;
-    text-decoration: none;
-    color: $dark-header-map;
-    font-weight: 600;
-    font-size: 16px;
-
-    &:hover {
-      background-color: $dark-submit-active;
+    h2{
+      color:  $dark-header-map;
+      font-weight: 900;
+      font-size: 30px;
     }
-   }
-
-  .find {
-	  display: flex;
-	  justify-content: center;
-  }
-
-  .project {
-    display: flex;
-    background-size: cover;
-    background-repeat: no-repeat;
-	  background-color: $newsletter-header;
-  	background-position: 50%;
-    height: 450px;
-    width: 100%;
-    text-align: center;
-    z-index: -100;
-  }
-
-  .project h2{
-    margin-top: 125px;
-    color:  $light-text;
-    font-weight: 900;
-    font-size: 30px;
-    margin-bottom: 0;
-    max-width: fit-content;
-    margin: auto;
-   }
-   .project .button{
-    border: 2px solid $light-text;
-    padding: 0.5rem;
-    text-decoration: none;
-    color: $light-text;
-    font-weight: 600;
-    font-size: 16px;
-   }
-}
-
-.project a:hover {
-  background-color: $dark-submit-active;
-}
-
-  @media (min-width: 48rem){
-    .flex-container{ 
-      display: flex;
-
-      .button {
-        background-color: $hover-text;
+    a{
+      border: 1px solid $dark-header-map;
+      padding: 0.5rem;
+      text-decoration: none;
+      color: $dark-header-map;
+      font-weight: 600;
+      font-size: 16px;
+      &:hover{
+        background-color: $dark-header-map;
         color: $light-text;
-    }
-
-    .map {
-        height: 420px;
-    }
-   
-    .map h2 {
-        font-size: 30px;
-        margin-top: 133px;
-    }
-
-    .map .button {
-        color: $light-text;
-        border-style: none;
-        padding-left: 13px;
-        padding-right: 13px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-top: -5px;
-    }
-   
-    .main-content {
-        flex: 1; 
-        order: 1;
-        font-size: 60px;
-    }
-
-    .sidebar {
-        flex: 1;
-        justify-content: center;
-    }
-
-    .project {
-        display: flex;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: $newsletter-header;
-        background-position: 50%;
-        height: 434px;
-        width: 100%;
-        text-align: center;
-        z-index: -100;
       }
-
-      .project h2 {
-        margin-top: 150px;
+    }
+  }
+  aside{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $newsletter-header;
+    height: 328px;
+    h2{
+      margin: 1rem .6rem 2rem;
+      color:  $light-text;
+      font-weight: 900;
+      font-size: 30px;
+      max-width: fit-content;
+      width: 14rem;
+    }
+    padding-bottom: 3rem;
+    a{
+      border: 2px solid $light-text;
+      padding: 0.5rem;
+      text-decoration: none;
+      color: $light-text;
+      font-weight: 600;
+      font-size: 16px;
+      &:hover{
+        background-color: $light-text;
+        color: $dark-header-map;
       }
-
-    .project .button {
-        border: 2px solid $hover-text;
     }
-
-    .button {
-        margin-top: 1rem;
-    }
-
-    .find {
-        padding: 8px;
-    }
-
+  }
 }
+
+@media (min-width: 48rem){
+  .flex-container{
+    flex-direction: row-reverse;
+    section{
+      width:50%;
+    }
+    aside{
+      width:50%;
+      h2{
+        max-width: auto;
+      }
+    }
+  }
 }
+
+
+// .flex-container {
+//   padding: 0;
+//     a{
+//       &:hover {
+//         background-color: $dark-submit-active;
+//       }
+//     }
+
+// section, aside, div {
+//   padding: 31px;
+// }
+  
+//   .map {
+//     background-size: cover;
+//     resize: both;
+//     background-repeat: no-repeat;
+// 	background-image: url(../images/map.jpg);
+// 	background-position: 51%;
+//     height: 328px;
+//     width: 100%;
+//     text-align: center;
+//     z-index: -100;
+// }
+//    .map h2{
+//     margin-top: 82px;
+//     color:  $dark-header-map;
+//     font-weight: 900;
+//     font-size: 30px;
+//     margin-bottom: 0;
+//    }
+
+//    .map .button{
+//     border: 1px solid $dark-header-map;
+//     padding: 0.5rem;
+//     text-decoration: none;
+//     color: $dark-header-map;
+//     font-weight: 600;
+//     font-size: 16px;
+//    }
+
+//   .find {
+// 	  display: flex;
+// 	  justify-content: center;
+//   }
+
+//   .project {
+//     display: flex;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+// 	  background-color: $newsletter-header;
+//   	background-position: 50%;
+//     height: 450px;
+//     width: 100%;
+//     text-align: center;
+//     z-index: -100;
+//   }
+
+//   .project h2{
+//     margin-top: 125px;
+//     color:  $light-text;
+//     font-weight: 900;
+//     font-size: 30px;
+//     margin-bottom: 0;
+//     max-width: fit-content;
+//     margin: auto;
+//    }
+//    .project .button{
+//     border: 2px solid $light-text;
+//     padding: 0.5rem;
+//     text-decoration: none;
+//     color: $light-text;
+//     font-weight: 600;
+//     font-size: 16px;
+//     &:hover{
+//       background-color: $dark-submit-active;
+//     }
+//    }
+// }
+
+//   @media (min-width: 48rem){
+//     .flex-container{ 
+//       display: flex;
+
+//       .button {
+//         background-color: $hover-text;
+//         color: $light-text;
+//     }
+
+//     .map {
+//         height: 420px;
+//     }
+   
+//     .map h2 {
+//         font-size: 30px;
+//         margin-top: 133px;
+//     }
+
+//     .map .button {
+//         color: $light-text;
+//         border-style: none;
+//         padding-left: 13px;
+//         padding-right: 13px;
+//         padding-top: 10px;
+//         padding-bottom: 10px;
+//         margin-top: -5px;
+//     }
+   
+//     .main-content {
+//         flex: 1; 
+//         order: 1;
+//         font-size: 60px;
+//     }
+
+//     .sidebar {
+//         flex: 1;
+//         justify-content: center;
+//     }
+
+//     .project {
+//         display: flex;
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         background-color: $newsletter-header;
+//         background-position: 50%;
+//         height: 434px;
+//         width: 100%;
+//         text-align: center;
+//         z-index: -100;
+//       }
+
+//       .project h2 {
+//         margin-top: 150px;
+//       }
+
+//     .project .button {
+//         border: 2px solid $hover-text;
+//     }
+
+//     .button {
+//         margin-top: 1rem;
+//     }
+
+//     .find {
+//         padding: 8px;
+//     }
+
+// }
+// }
 
 
