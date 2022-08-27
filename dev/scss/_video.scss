@@ -9,7 +9,7 @@
 
 .video-wrapper {
     position:relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 54.25%;
     height: 0;
     border: solid #154B66 15px;
 }
@@ -24,18 +24,26 @@
 
 
 
-@media (min-width: 48rem){
+@media (min-width: 768px){
 .video {
     background-color: #009ddc;
-    padding: 0 80px 60px;
+    padding: 0 85px 60px;
     padding-top: 60px;
 }
+}
+
+@media (min-width: 1024px) {
+    .video {
+        background-color: #009ddc;
+        padding: 0 250px 60px;
+        padding-top: 60px;
+    }
 }
 
 @media (min-width: 81.25rem){
     .video {
         background-color: #009ddc;
-        padding: 0 325px 60px;
+        padding: 0 385px 60px;
         padding-top: 60px;
     }
     }

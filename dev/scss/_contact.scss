@@ -90,9 +90,27 @@
         border:none;
       }
     }
-  }
-}
 
+    .map .button {
+        color: $light-text;
+        border-style: none;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: -5px;
+    }
+   
+    .main-content {
+        flex: 1; 
+        order: 1;
+        font-size: 60px;
+    }
+
+    .sidebar {
+        flex: 1;
+        justify-content: center;
+    }
 
 // .flex-container {
 //   padding: 0;
@@ -232,15 +250,15 @@
 //         border: 2px solid $hover-text;
 //     }
 
-//     .button {
-//         margin-top: 1rem;
-//     }
+    .button {
+        margin-top: 1rem;
+    }
 
-//     .find {
-//         padding: 8px;
-//     }
+    .find {
+        padding: 8px;
+    }
 
-// }
-// }
+}
+}
 
 
