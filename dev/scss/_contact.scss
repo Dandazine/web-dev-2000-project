@@ -1,15 +1,19 @@
 @use 'variables' as *;
 
-.flex-container {
-  padding: 0;
-
-section, aside, div {
-  padding: 31px;
-}
-  
-  .map {
+.flex-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  section{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
-    resize: both;
     background-repeat: no-repeat;
 	  background-image: url(../images/map.jpg);
 	  background-position: 51%;
@@ -33,9 +37,11 @@ section, aside, div {
     color: $dark-header-map;
     font-weight: 600;
     font-size: 16px;
+
+    &:hover {
+      background-color: $dark-submit-active;
+    }
    }
-
-
 
   .find {
 	  display: flex;
@@ -63,7 +69,6 @@ section, aside, div {
     max-width: fit-content;
     margin: auto;
    }
-
    .project .button{
     border: 2px solid $light-text;
     padding: 0.5rem;
@@ -74,6 +79,9 @@ section, aside, div {
    }
 }
 
+.project a:hover {
+  background-color: $dark-submit-active;
+}
 
   @media (min-width: 48rem){
     .flex-container{ 
@@ -83,7 +91,6 @@ section, aside, div {
         background-color: $hover-text;
         color: $light-text;
     }
-
 
     .map {
         height: 420px;

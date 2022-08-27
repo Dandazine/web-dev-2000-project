@@ -51,9 +51,6 @@ const headerSlide = {
             headerSlide.hero.classList.remove("img-1", "img-2", "img-3");
             headerSlide.hero.classList.add(headerSlide.currentClassNum[headerSlide.num])
         }, 200);
-        if(headerSlide.num === 0){
-            document.getElementById("button1").hover();
-        }
     }
 
 }

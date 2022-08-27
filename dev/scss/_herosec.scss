@@ -51,6 +51,10 @@
         text-decoration: none;
         padding: 0.75rem;
         border: 1px solid $light-text;
+        &:hover{
+            background-color: $light-text;
+            color: $hover-text;
+        }
     }
 
     .products-link {
@@ -109,12 +113,5 @@
         a {
             font-weight: bold;
         }
-    }
-}
-
-@media(min-width: 64rem) {
-    .view-products-services a:hover {
-        background-color: $light-text;
-        color: $hover-text;
     }
 }
