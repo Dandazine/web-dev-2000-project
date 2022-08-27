@@ -108,24 +108,6 @@ svg {
         max-height:auto;
         height: 5rem;
     }
-}
-
-@media (min-width: 64rem) {
-    .footer-text {
-        font-size: 1rem;
-    }
-
-    .icons-copyright {
-        flex-direction: row;
-        align-items: center;
-        // padding-bottom: 2rem;
-    }
-}
-
-@media (min-width: 72rem){
-    .blue-curves::before{
-        background-size: 100% 90%;
-    }
 
     .logo {
         width: 150px;
@@ -153,5 +135,35 @@ svg {
     .icons-copyright {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (min-width: 64rem) {
+    .footer-text {
+        font-size: 0.85rem;
+    }
+
+    .icons-copyright {
+        flex-direction: row;
+        align-items: center;
+        // padding-bottom: 2rem;
+    }
+
+    .logo {
+        width: 220px;
+    }
+
+    .together {
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 72rem){
+    .blue-curves::before{
+        background-size: 100% 90%;
+    }
+
+    .together {
+        padding-right: 7rem;
     }
 }
