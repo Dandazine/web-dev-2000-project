@@ -74,11 +74,20 @@
     flex-direction: row-reverse;
     section{
       width:50%;
+      a{
+        background-color: $btn-color;
+        color: $light-text;
+        border: none;
+      }
     }
     aside{
       width:50%;
       h2{
         max-width: auto;
+      }
+      a{
+        background-color: $btn-color;
+        border:none;
       }
     }
   }
