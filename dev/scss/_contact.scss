@@ -11,8 +11,8 @@ section, aside, div {
     background-size: cover;
     resize: both;
     background-repeat: no-repeat;
-	background-image: url(../images/map.jpg);
-	background-position: 51%;
+	  background-image: url(../images/map.jpg);
+	  background-position: 51%;
     height: 328px;
     width: 100%;
     text-align: center;
@@ -33,11 +33,9 @@ section, aside, div {
     color: $dark-header-map;
     font-weight: 600;
     font-size: 16px;
-
-    &:hover {
-      background-color: $dark-submit-active;
-    }
    }
+
+
 
   .find {
 	  display: flex;
@@ -65,6 +63,7 @@ section, aside, div {
     max-width: fit-content;
     margin: auto;
    }
+
    .project .button{
     border: 2px solid $light-text;
     padding: 0.5rem;
@@ -75,9 +74,6 @@ section, aside, div {
    }
 }
 
-.project a:hover {
-  background-color: $dark-submit-active;
-}
 
   @media (min-width: 48rem){
     .flex-container{ 
@@ -87,6 +83,7 @@ section, aside, div {
         background-color: $hover-text;
         color: $light-text;
     }
+
 
     .map {
         height: 420px;
