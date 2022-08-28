@@ -69,11 +69,15 @@
   }
 }
 
-@media (min-width: 48rem){
+@media (min-width: 768px){
   .flex-container{
     flex-direction: row-reverse;
     section{
       width:50%;
+      height: 400px;
+      h2{
+        font-size: 32px;
+      }
       a{
         background-color: $btn-color;
         color: $light-text;
@@ -82,173 +86,38 @@
     }
     aside{
       width:50%;
+      height: 400px;
       h2{
-        max-width: auto;
+        max-width: fit-content;
+        margin: 5rem 0.6rem 2rem;
+        color: white;
+        font-weight: 900;
+        font-size: 32px;
+        width: 20rem;
       }
       a{
         background-color: $btn-color;
         border:none;
+        padding: 0.6rem 1rem;
+        font-size: 18px;
       }
     }
 
     .map .button {
         color: $light-text;
         border-style: none;
-        padding-left: 13px;
-        padding-right: 13px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 13px;
+        padding-bottom: 13px;
         margin-top: -5px;
+        font-size: 18px;
     }
    
-    .main-content {
-        flex: 1; 
-        order: 1;
-        font-size: 60px;
-    }
-
     .sidebar {
         flex: 1;
         justify-content: center;
     }
-
-// .flex-container {
-//   padding: 0;
-//     a{
-//       &:hover {
-//         background-color: $dark-submit-active;
-//       }
-//     }
-
-// section, aside, div {
-//   padding: 31px;
-// }
-  
-//   .map {
-//     background-size: cover;
-//     resize: both;
-//     background-repeat: no-repeat;
-// 	background-image: url(../images/map.jpg);
-// 	background-position: 51%;
-//     height: 328px;
-//     width: 100%;
-//     text-align: center;
-//     z-index: -100;
-// }
-//    .map h2{
-//     margin-top: 82px;
-//     color:  $dark-header-map;
-//     font-weight: 900;
-//     font-size: 30px;
-//     margin-bottom: 0;
-//    }
-
-//    .map .button{
-//     border: 1px solid $dark-header-map;
-//     padding: 0.5rem;
-//     text-decoration: none;
-//     color: $dark-header-map;
-//     font-weight: 600;
-//     font-size: 16px;
-//    }
-
-//   .find {
-// 	  display: flex;
-// 	  justify-content: center;
-//   }
-
-//   .project {
-//     display: flex;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-// 	  background-color: $newsletter-header;
-//   	background-position: 50%;
-//     height: 450px;
-//     width: 100%;
-//     text-align: center;
-//     z-index: -100;
-//   }
-
-//   .project h2{
-//     margin-top: 125px;
-//     color:  $light-text;
-//     font-weight: 900;
-//     font-size: 30px;
-//     margin-bottom: 0;
-//     max-width: fit-content;
-//     margin: auto;
-//    }
-//    .project .button{
-//     border: 2px solid $light-text;
-//     padding: 0.5rem;
-//     text-decoration: none;
-//     color: $light-text;
-//     font-weight: 600;
-//     font-size: 16px;
-//     &:hover{
-//       background-color: $dark-submit-active;
-//     }
-//    }
-// }
-
-//   @media (min-width: 48rem){
-//     .flex-container{ 
-//       display: flex;
-
-//       .button {
-//         background-color: $hover-text;
-//         color: $light-text;
-//     }
-
-//     .map {
-//         height: 420px;
-//     }
-   
-//     .map h2 {
-//         font-size: 30px;
-//         margin-top: 133px;
-//     }
-
-//     .map .button {
-//         color: $light-text;
-//         border-style: none;
-//         padding-left: 13px;
-//         padding-right: 13px;
-//         padding-top: 10px;
-//         padding-bottom: 10px;
-//         margin-top: -5px;
-//     }
-   
-//     .main-content {
-//         flex: 1; 
-//         order: 1;
-//         font-size: 60px;
-//     }
-
-//     .sidebar {
-//         flex: 1;
-//         justify-content: center;
-//     }
-
-//     .project {
-//         display: flex;
-//         background-size: cover;
-//         background-repeat: no-repeat;
-//         background-color: $newsletter-header;
-//         background-position: 50%;
-//         height: 434px;
-//         width: 100%;
-//         text-align: center;
-//         z-index: -100;
-//       }
-
-//       .project h2 {
-//         margin-top: 150px;
-//       }
-
-//     .project .button {
-//         border: 2px solid $hover-text;
-//     }
 
     .button {
         margin-top: 1rem;
@@ -261,4 +130,93 @@
 }
 }
 
+@media (min-width: 1024px) {
+  .flex-container{
+    flex-direction: row-reverse;
+    section{
+      width:50%;
+      height: 415px;
+      h2{
+        font-size: 48px;
+      }
+      a{
+        background-color: $btn-color;
+        color: $light-text;
+        border: none;
+      }
+    }
+    aside{
+      width:50%;
+      height: 415px;
+      h2{
+        max-width: fit-content;
+        margin: 5rem 0.6rem 2rem;
+        color: white;
+        font-weight: 900;
+        font-size: 48px;
+        width: 28rem;
+      }
+      a{
+        background-color: $btn-color;
+        border:none;
+        padding: 0.6rem 1rem;
+        font-size: 18px;
+      }
+    }
 
+    .map .button {
+        color: $light-text;
+        border-style: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        margin-top: -5px;
+        font-size: 18px;
+    }
+   
+    .sidebar {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .button {
+        margin-top: 1rem;
+    }
+
+    .find {
+        padding: 8px;
+    }
+
+}
+}
+
+@media (min-width: 1440px) {
+  .flex-container{
+    flex-direction: row-reverse;
+    section{
+      width:50%;
+      height: 450px;
+      h2{
+        font-size: 48px;
+      }
+    
+    }
+    aside{
+      width:50%;
+      height: 450px;
+      h2{
+        max-width: fit-content;
+        margin: 5rem 0.6rem 2rem;
+        color: white;
+        font-weight: 900;
+        font-size: 48px;
+        width: 31rem;
+      }
+      
+    }
+
+  
+
+}
+}
