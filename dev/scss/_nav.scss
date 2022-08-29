@@ -54,7 +54,7 @@ li {
         padding: 0;
         list-style: none;
         overflow: hidden;
-        background-color: rgb(70, 68, 68, 0.8);
+        background-color: rgb(70, 68, 68, 0);
         width: 100%;
 
         li:hover {
@@ -329,6 +329,7 @@ li {
             padding: 0.5rem 1.5rem;
             max-width: 600px;
             margin-top: 1.5rem;
+            background-color: rgb(70, 68, 68, 0.7);
         }
     }
 
